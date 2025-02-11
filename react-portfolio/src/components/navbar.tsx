@@ -1,9 +1,9 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import IsotypeLogo from "../assets/IsotypeAStudio.svg";
-import NavbarStyles from "../styles/navbarStyles.css";
+import "../styles/navbarStyles.css";
+import "../styles/colors.css";
 
-// Define navigation links
 const navigation = [
   { name: "Home", href: "#", current: true },
   { name: "About me", href: "#", current: false },
@@ -17,7 +17,7 @@ function classNames(...classes: (string | boolean | undefined)[]) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-neutral-800 rounded-xl">
+    <Disclosure as="nav" className="black2-bg sticky top-6 left-0 right-0 z-50 w-full rounded-xl">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           
@@ -49,7 +49,7 @@ export default function Navbar() {
                   key={item.name}
                   href={item.href}
                   className={classNames(
-                    item.current ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                    item.current ? "black-bg white-txt" : "white-txt hover:bg-black",
                     "rounded-md px-3 py-2 text-sm font-medium"
                   )}
                 >
@@ -70,7 +70,7 @@ export default function Navbar() {
               as="a"
               href={item.href}
               className={classNames(
-                item.current ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                item.current ? "black-bg white-txt" : "white-txt hover:bg-black",
                 "block rounded-md px-3 py-2 text-base font-medium"
               )}
             >

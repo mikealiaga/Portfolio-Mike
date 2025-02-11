@@ -1,0 +1,22 @@
+/* h1{
+    font-size: 96px;
+    line-height: 80%;
+} */
+
+#hero-buttons {
+    margin-top: 40px;
+}
+
+#hero-button1:hover {
+border: 1px solid var(--pink) !important;
+}
+
+#button2:hover {    
+    border: 1px solid var(--pink) !important;
+    color: var(--pink) !important;
+}
+
+#phrase {
+    font-size: 24px;
+    color: var(--white);
+}

@@ -1,18 +1,39 @@
+import Cara from "../assets/Cara.svg";
+import "../styles/colors.css";
+import "../styles/home.css";
 
-function AboutMe() {
+
+function Home() {
   return (
-    <div className=''>
-      <h1>About Me</h1>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla ducimus sit iste non repudiandae iusto tempora rem voluptatum in! Repellendus, ut eveniet! Dolorem iste perspiciatis dolor ipsum amet exercitationem dolore!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam deleniti distinctio eum delectus eius sequi blanditiis doloremque quas voluptatibus consectetur atque provident sit commodi maxime, necessitatibus vitae quod recusandae aspernatur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptas labore. Ratione a nulla repellendus et optio tempora corporis soluta incidunt commodi recusandae molestias unde quibusdam veritatis, pariatur magni ut.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur temporibus neque fuga eaque voluptate maxime, accusamus sint optio! Accusamus quidem earum at fugiat rerum explicabo aliquid officia voluptatum mollitia neque!
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore esse laudantium veritatis inventore hic excepturi consectetur pariatur tenetur aperiam sed accusantium fugit, mollitia, in, quaerat culpa! Maxime quod nobis temporibus.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis laborum dignissimos harum exercitationem! Molestias dolorem nisi minus, expedita, aut optio, ipsa assumenda amet nulla doloribus at reprehenderit repellendus accusamus aspernatur.
-      </p>
+    <div className="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
+      
+      {/* Left: Content */}
+      <div id="content-hero" className="flex flex-col items-start space-y-6 md:w-1/2">
+            <h1 className="text-left text-4xl md:text-6xl lg:text-[96px] font-medium white-txt">
+                Hola, my name is <span className="cyan-txt">Mike</span>
+            </h1>
+            <p className="text-left text-lg grey-txt">
+            I´m a Swiss Army Knife of design. Picture me as your design superhero with many super powers, 
+            a magical blend of industrial design expertise and a whole arsenal of skills, including graphic 
+            design, web design, branding, animation, 3D modeling, and rendering.
+            </p>
+            <div className="flex space-x-4" id="hero-buttons">
+                <button className="px-6 py-3 rounded-lg transition black2-bg " id="hero-button1">
+                    View Portfolio
+                </button>
+                <button className="px-6 py-3 rounded-lg transition cyan-border cyan-txt black-bg" id="button2">
+                    Contact Me
+                </button>
+            </div>
+      </div>
+
+      {/* Right: Hero Image */}
+      <div id="hero-image" className="md:w-1/2 flex justify-center">
+        <img src={Cara} alt="Cara" className="w-full max-w-xs md:max-w-sm lg:max-w-md" />
+      </div>
+
     </div>
-  )
+  );
 }
 
-export default AboutMe
+export default Home;

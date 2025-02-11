@@ -1,0 +1,58 @@
+:root {
+    --background: var(--Black, #151515);
+    --black2: var(--Black2, #1E1E1E);
+    --cyan: var(--Cyan, #62DBB9);
+    --grey: var(--Grey, #A9A9A9);
+    --border: var(--Border, #212121);
+    --pink: var(--Pink, #EA3BB5);
+    --purple: var(--Purple, #BB62DB);
+    --white: var(--White, #FFFFFF);
+}
+
+.black2-bg {
+    background-color: var(--black2) !important;
+}
+
+.black-bg {
+    background-color: var(--background) !important;
+}
+
+.white-txt {
+    color: var(--white) !important;
+}
+
+.grey-txt {
+    color: var(--grey) !important;
+}
+
+.grey-bg {
+    background-color: var(--grey) !important;
+}
+
+.grey-border {
+    border: 1px solid grey !important;
+    padding: 16px 24px !important; /* 16px top-bottom, 24px left-right */
+    border-radius: 12px; /* Optional: Adjust for rounded corners */
+  }
+
+.pink-txt {
+    color: var(--pink) !important;
+}
+
+.purple-txt {
+    color: var(--purple) !important;
+}
+
+.cyan-txt {
+    color: var(--cyan) !important;
+}
+
+.cyan-border {
+    border: 1px solid var(--cyan) !important;
+}
+
+.border {
+    border: 1px solid var(--border) !important;
+}
+
+
