@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="w-full min-h-screen flex flex-col">
       <Navbar />
-      <main className="flex-grow w-full "> {/* Ensure content starts below navbar */}
+      <main className="flex-grow w-full ">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
