@@ -16,7 +16,7 @@ A **React-based portfolio website** showcasing UX/UI Design, Front-End, and Full
 
 ## Installation
 ```bash
-git clone https://github.com/your-username/Portfolio-Mike.git
+git clone https://github.com/mikealiaga/Portfolio-Mike.git
 cd Portfolio-Mike
 npm install
 npm run dev
@@ -25,7 +25,7 @@ npm run dev
 ## Deployment
 This project is deployed on Netlify.
 
-Live Demo: [Click Here](https://www.google.com)
+Live Demo: [https://mikealiaga.netlify.app/](https://mikealiaga.netlify.app/)
 
 ## Contact
 👤 **Your Name**  
