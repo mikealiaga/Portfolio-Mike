@@ -1,14 +1,15 @@
-import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
+import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom"; // ✅ Import Link
 import IsotypeLogo from "../assets/IsotypeAStudio.svg";
 import "../styles/navbarStyles.css";
 import "../styles/colors.css";
 
 const navigation = [
-  { name: "Home", href: "#", current: true },
-  { name: "About me", href: "#", current: false },
-  { name: "Portfolio", href: "#", current: false },
-  { name: "Contact", href: "#", current: false },
+  { name: "Home", href: "/" },
+  { name: "About me", href: "/about" },
+  { name: "Portfolio", href: "/portfolio" },
+  { name: "Contact", href: "/contact" },
 ];
 
 function classNames(...classes: (string | boolean | undefined)[]) {
@@ -21,12 +22,14 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           
-          {/* Left: Logo */}
+          {/* Left: Logo (Now Clickable) */}
+          <Link to="/" className="flex items-center">
             <img
               src={IsotypeLogo}
               alt="Aliaga Studio Logo"
-              className="h-8 w-auto invert"
+              className="h-8 w-auto invert cursor-pointer"
             />
+          </Link>
 
           {/* Right: Mobile Menu Button */}
           <div className="sm:hidden">
@@ -45,16 +48,16 @@ export default function Navbar() {
           <div className="hidden sm:flex sm:items-center sm:justify-end">
             <div className="flex space-x-4">
               {navigation.map((item) => (
-                <a
+                <Link
                   key={item.name}
-                  href={item.href}
+                  to={item.href}
                   className={classNames(
-                    item.current ? "black-bg white-txt" : "white-txt hover:bg-black",
+                    "white-txt hover:bg-black",
                     "rounded-md px-3 py-2 text-sm font-medium"
                   )}
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -67,12 +70,9 @@ export default function Navbar() {
           {navigation.map((item) => (
             <DisclosureButton
               key={item.name}
-              as="a"
-              href={item.href}
-              className={classNames(
-                item.current ? "black-bg white-txt" : "white-txt hover:bg-black",
-                "block rounded-md px-3 py-2 text-base font-medium"
-              )}
+              as={Link}
+              to={item.href}
+              className="block rounded-md px-3 py-2 text-base font-medium white-txt hover:bg-black"
             >
               {item.name}
             </DisclosureButton>

@@ -9,9 +9,9 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="w-full min-h-screen flex flex-col">
       <Navbar />
-      <main className="flex-grow pt-32"> {/* Ensure content starts below navbar */}
+      <main className="flex-grow w-full "> {/* Ensure content starts below navbar */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -19,7 +19,9 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
-      <Footer />
+      <div className="full">
+        <Footer />
+      </div>
     </div>
   );
 }

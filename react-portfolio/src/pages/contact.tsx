@@ -12,42 +12,44 @@ function Contact() {
             Contact
           </h1>
           <p className="text-left text-lg mt-4 grey-txt">
-        Let's <span className="text-purple-400">start a conversation</span> that will ignite our creative sparks.
-      </p>
+            Let's <span className="text-purple-400">start a conversation</span> that will ignite our creative sparks.
+          </p>
         </div>
       </div>
 
-      {/* Contact Form */}
-      <form className="mt-8 max-w-lg">
-        {/* Name */}
-        <label className="block text-sm font-medium grey-txt">Name</label>
-        <input type="text" className="w-full p-3 mt-1 bg-black2-bg rounded-md border border-gray-700 focus:ring-2 focus:ring-purple-500" defaultValue="Elon" />
+      <form className="mt-[120px] max-w-lg w-full">
+  {/* Name */}
+  <label className="block text-sm font-medium grey-txt text-left w-full">Name</label>
+  <input type="text" className="w-full p-3 mt-1 bg-black2-bg rounded-md border border-gray-700 focus:ring-2 focus:ring-purple-500 grey-txt" defaultValue="Elon" />
 
-        {/* Last Name */}
-        <label className="block text-sm font-medium grey-txt mt-4">Last Name</label>
-        <input type="text" className="w-full p-3 mt-1 bg-black2-bg rounded-md border border-gray-700 focus:ring-2 focus:ring-purple-500" defaultValue="Musk" />
+  {/* Last Name */}
+  <label className="block text-sm font-medium grey-txt mt-4 text-left w-full">Last Name</label>
+  <input type="text" className="w-full p-3 mt-1 bg-black2-bg rounded-md border border-gray-700 focus:ring-2 focus:ring-purple-500 grey-txt" defaultValue="Musk" />
 
-        {/* Email */}
-        <label className="block text-sm font-medium grey-txt mt-4">Email</label>
-        <input type="email" className="w-full p-3 mt-1 bg-black2-bg rounded-md border border-gray-700 focus:ring-2 focus:ring-purple-500" defaultValue="elon@tesla.com" />
+  {/* Email */}
+  <label className="block text-sm font-medium grey-txt mt-4 text-left w-full">Email</label>
+  <input type="email" className="w-full p-3 mt-1 bg-black2-bg rounded-md border border-gray-700 focus:ring-2 focus:ring-purple-500 grey-txt" defaultValue="elon@tesla.com" />
 
-        {/* Message */}
-        <label className="block text-sm font-medium grey-txt mt-4">Message</label>
-        <textarea className="w-full p-3 mt-1 h-24 bg-black2-bg rounded-md border border-gray-700 focus:ring-2 focus:ring-purple-500">
-          I want to hire you
-        </textarea>
+  {/* Message */}
+  <label className="block text-sm font-medium grey-txt mt-4 text-left w-full">Message</label>
+  <textarea className="w-full p-3 mt-1 h-24 bg-black2-bg rounded-md border border-gray-700 focus:ring-2 focus:ring-purple-500 grey-txt">
+    I want to hire you
+  </textarea>
 
-        {/* Submit Button */}
-        <button type="submit" className="w-full mt-6 p-3 border rounded-md border-green-500 text-green-500 hover:bg-green-500 hover:text-black transition">
-          Send
-        </button>
-      </form>
+  {/* Submit Button */}
+  <button type="submit" className="w-full mt-6 p-3 rounded-md cyan-border cyan-txt black-bg hover:bg-green-500 hover:text-black transition">
+    Send
+  </button>
+</form>
 
+      <div className="mt-[240px]">
+        <p id="phrase" className="text-left mt-12 grey-txt mt-6 text-sm">
+          "The only way to do great work is to love what you do.  
+          If you haven’t found it yet, keep looking. Don’t settle."  
+          <br /> — Steve Jobs
+        </p>
+      </div>
 
-      <p id="phrase" className="text-left mt-12 white-txt text-lg">
-        I believe great design isn’t just about aesthetics—it’s about interaction, accessibility, and performance. 
-        My goal is to bridge the gap between design and development, creating digital experiences that are both beautiful and intuitive.
-      </p>
     </div>
   );
 }
