@@ -5,7 +5,7 @@ import "../styles/home.css";
 
 function Home() {
   return (
-    <div className="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
+    <div className="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between h-screen pb-[240px]">
       
       {/* Left: Content */}
       <div id="content-hero" className="flex flex-col items-start space-y-6 md:w-1/2">

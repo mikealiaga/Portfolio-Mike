@@ -3,7 +3,7 @@ import "../styles/home.css";
 
 function About() {
   return (
-    <div className="container mx-auto px-6 md:px-12 lg:px-20 py-12">
+    <div className="container mx-auto px-6 md:px-12 lg:px-20 py-12 h-screen">
 
       <div className="flex flex-col-reverse md:flex-row items-center justify-between space-y-8 md:space-y-0">
         
