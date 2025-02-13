@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import "../styles/colors.css";
 import Cover from "../assets/cover.png";
 import ARConsultores from "../assets/ARConsultores.png";
